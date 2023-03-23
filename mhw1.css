@@ -1,0 +1,177 @@
+:root {
+    --primary-color:  rgba(160, 122, 188, 0.274); 
+}
+    
+#header_mio{
+
+    color: red;
+    background-image: url(cordoni.jpg);
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 146.8px;
+    
+    
+}
+#overlay{
+
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    background-color: rgba(0, 0, 0, 0.3);
+   
+    width: 100%;
+    height: 100%;
+}
+#body_mio{
+    margin: 0;
+    background-color: var(--primary-color);
+}
+#header_mio nav{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 1.5em;
+    padding: 20px;
+    height: 5%;
+    
+}
+#links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img_p{
+    width: 50%;
+    height: 50%;
+    border-radius: 10%;
+    margin-bottom: 120px;
+    
+}
+#scritta_p{
+    text-align: center;
+    color: black;
+    font-size: 2em;
+    font-family: 'Alkatra',sans-serif;
+    letter-spacing: 3px;
+    
+    
+}
+#profilo_mio{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    position: absolute;
+    top:450px
+}
+#profilo_mio p{
+    margin: 0;
+    color: red;
+}
+#foto_profilo{
+    border-radius: 50%;
+    height: 100px;
+    
+}
+.nav_links{
+    cursor: pointer;
+    padding: 10px 15px;
+    border: 2px solid rgba(254, 5, 5, 0.826);
+    border-radius: 100px;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    color: rgba(255, 0, 0, 0.738);
+}
+#profilo_mio p a{
+    cursor: pointer;
+    text-decoration: none;
+}
+#profilo_mio p a:visited{
+    color: red;
+}
+#profilo_mio p a:hover{
+    color: rgba(255, 0, 0, 0.695);
+}
+.nav_links:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+#sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 66.67%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#sec div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.titolo{
+    font-size: 1.8em;
+    font-family: 'Ubuntu',sans-serif;
+    font-weight: normal;
+    
+}
+.paragrafo{
+    font-size: 1.5em;
+    font-family: 'Roboto',sans-serif;
+    line-height: 40px;
+    margin: 20px 0px 40px 0px;
+}
+#profilo_mio p{
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+}
+#men{
+    display: none;
+    }
+#men div {
+    width: 25px;
+    height: 3px;
+    background-color: red;
+    margin: 5px 0;
+    }
+#foot{
+    background-color: rgb(31,31,31);
+    color: rgba(160, 122, 188, 0.9);
+    font-size: 1.2em;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+        .nav_links{
+            display:none;
+        }
+        #men{
+            display: flex;
+            flex-direction: column;
+        }
+        #links a img{
+            width: 50%;
+            height: 50%;
+        }
+        .img_p{
+            width: 100%;
+            height: 100%;
+        }
+}
